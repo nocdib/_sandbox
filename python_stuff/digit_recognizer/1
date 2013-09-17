@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+# Create pixel darkness ranges
+darkness = []
+temp = []
+
+for i in range(0,256,8):
+  temp.append(i)
+
+for x in temp:
+  darkness.append(range(x,x+7))
+
+
+print temp
+print
+print
+print
+
+print darkness
+
