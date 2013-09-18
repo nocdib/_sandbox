@@ -1,4 +1,8 @@
 #!//usr/bin/ruby
+=begin
+Testing out hashes (dictionaries) in Ruby
+=end
+
 
 cities = {'NJ' => 'Trenton',
 'MI' => 'Detroit',
