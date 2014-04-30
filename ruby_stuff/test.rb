@@ -7,6 +7,8 @@ end
 puts "There are #{ARGV.length} arguments. The first one is #{ARGV.first} and
 the last one is #{ARGV.last}"
 
+puts "The present working directory is: #{%x(pwd)}"
+
 #print "Enter your name: "
 #name = STDIN.gets.chomp()
 #if name.strip().length < 1
