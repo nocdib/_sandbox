@@ -6,7 +6,9 @@
 	int denominator;
 }
 -(void) print;
--(void) setNumerator: (int) n;
--(void) setDenominator: (int) d;
+-(NSString*) returnFraction;
+-(void) setNumerator: (int) n  setDenominator: (int) d;
+-(int) numerator;
+-(int) denominator;
 
 @end
