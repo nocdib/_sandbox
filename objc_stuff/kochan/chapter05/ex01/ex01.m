@@ -7,9 +7,9 @@ int main(int argc, char *argv[])
 
 	unsigned int n = 5;
 
-	NSLog(@"---\t----------");
+	NSLog(@"---\t\t----------");
 	NSLog(@"n\t\tn-squared");
-	NSLog(@"---\t----------");
+	NSLog(@"---\t\t----------");
 
 	for (n=1; n<=10; n++)
 		NSLog(@"%u\t\t%.f",n,pow(n,2));
