@@ -4,19 +4,23 @@ int main (int argc, char *argv[])
 {
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	Primate * origin = [Primate new];
-	[origin speak];
 	[origin setName:@"Cephus"];
-	NSLog(@"%@ is of type %@", [origin getName], [origin getSpecies]);
+	NSLog(@"%@ is of type %@", [origin name], [origin species]);
+	NSLog(@"%@ says: %@", [origin name], [origin speak]);
 
 	Man * greg = [Man new];
-	[greg speak];
+	NSLog(@"%@ is of type %@",[greg name],[greg species]);
 	[greg setName: @"Greg"];
-	NSLog(@"His name is %@",[greg getSpecies]);
-
-	//printf("The %@ spoke.\n", greg.species);
+	NSLog(@"Name change: %@ is of type %@",[greg name],[greg species]);
+	NSLog(@"%@ says: %@",[greg name],[greg speak]);
+	
+	
 	Chimp * drZayas = [Chimp new];
-	[drZayas speak];
+	drZayas.name = @"Doctor Zayas";
+	NSLog(@"%@ is of type %@", drZayas.name, drZayas.species);
+	NSLog(@"%@ says: %@", drZayas.name, drZayas.speak);
 	printf("The chimp spoke.\n");
+	
 	[pool drain];
 	return 0;
 }

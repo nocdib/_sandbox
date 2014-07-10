@@ -6,40 +6,28 @@
 	NSString * species;
 }
 
-//@property NSString * name;
-//@property NSString * species;
+@property (assign) NSString *name, *species;
+
 - (id) init;
-- (void) speak;
-- (void) setName: (NSString *) newName;
-- (NSString *) getName;
-- (NSString *) getSpecies;
+- (NSString *) speak;
 
 @end
 
 @implementation Primate
 
+@synthesize name, species;
+
 - (id) init
 {
-	species = @"none";
-	return nil;
+	name = @"none";
+	species = @"generic";
+	return self;
 }
--(void) speak
+-(NSString *) speak
 {
-	printf(".....\n");
+	return @".....";
 }
 
-- (void) setName: (NSString *) newName;
-{
-	name = newName;
-}
-- (NSString *) getName;
-{
-	return name;
-}
-- (NSString *) getSpecies;
-{
-	return species;
-}
 
 @end
 
@@ -47,10 +35,6 @@
 // ------- MAN	----------------
 
 @interface Man : Primate
-{
-}
--(id) init;
--(void) speak;
 @end
 
 @implementation Man
@@ -58,12 +42,13 @@
 -(id) init
 {
 	species = @"Homo Sapien";
-	return 0;
+	name = @"Adam";
+	return self;
 }
 
-- (void) speak
+- (NSString *) speak
 {
-	printf("Hello.\n");
+	return [NSString stringWithFormat:@"Hello. My name is %@", [self name]];
 }
 
 @end
@@ -71,22 +56,20 @@
 // ---------	Chimp -------------------
 
 @interface Chimp : Primate
-{
-}
 @end
 
 @implementation Chimp
 
 -(id) init
 {
+	name = @"Bubbles";
 	species = @"Chimpanzee";
-	return 0;
+	return self;
 }
 
--(void) speak
+-(NSString *) speak
 {
-	printf("Ooh ooh aaah aaaahhh!");
+	return @"Ooh ooh aaah aaaahhh!";
 }
 @end
-
 
