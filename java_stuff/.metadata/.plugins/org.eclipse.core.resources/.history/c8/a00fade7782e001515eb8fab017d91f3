@@ -1,0 +1,43 @@
+package com.nocdib;
+
+import java.lang.management.ManagementFactory;
+
+import javax.management.AttributeNotFoundException;
+import javax.management.InstanceAlreadyExistsException;
+import javax.management.InstanceNotFoundException;
+import javax.management.IntrospectionException;
+import javax.management.MBeanException;
+import javax.management.MBeanRegistrationException;
+import javax.management.MBeanServer;
+import javax.management.MalformedObjectNameException;
+import javax.management.NotCompliantMBeanException;
+import javax.management.ObjectName;
+import javax.management.ReflectionException;
+ 
+public class SystemConfigManagement {
+    private static final int DEFAULT_NO_THREADS=10;
+    private static final String DEFAULT_SCHEMA="default";
+ 
+    public static void main(String[] args) throws MalformedObjectNameException, InterruptedException, InstanceAlreadyExistsException, NotCompliantMBeanException, AttributeNotFoundException, MBeanException, ReflectionException, IntrospectionException, InstanceNotFoundException {
+        //Get the MBean server
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        
+        //register the MBean
+        SystemConfig mBean = new SystemConfig(DEFAULT_NO_THREADS, DEFAULT_SCHEMA);
+        ObjectName name = new ObjectName("java.lang:type=ClassLoading");
+        //System.out.println(mbs.getDefaultDomain());
+        String[] domains = mbs.getDomains();
+        for (String domain : domains)
+        	System.out.println(domain);
+        System.out.println(mbs.getObjectInstance(name));
+        //System.out.println(mbs.getMBeanInfo(name));
+
+    /*    mbs.registerMBean(mBean, name);
+        do{
+            Thread.sleep(3000);
+            System.out.println("Thread Count="+mBean.getThreadCount()+":::Schema Name="+mBean.getSchemaName());
+        }while(mBean.getThreadCount() !=0);
+         */
+    }
+ 
+}
