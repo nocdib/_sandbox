@@ -1,3 +1,5 @@
+package _exercise_solutions.ch02.sol3;
+
 //Chapter 2, Exercise 3
 /*
  Write a program that defines a floating-point variable initialized with a dollar value for your income
