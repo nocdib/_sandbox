@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="amount">Please enter the amount</string>
+    <string name="withdraw_button">Withdraw</string>
+    <string name="deposit_button">Deposit</string>
+    <string name="balance">Your balance is</string>
 </resources>

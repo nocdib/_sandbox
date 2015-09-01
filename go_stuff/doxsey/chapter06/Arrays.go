@@ -6,6 +6,7 @@ import "fmt"
 func main(){
 
 	var arrOne [5]string
+
 	arrOne[0] = "first"
 	arrOne[1] = "second"
 	arrOne[2] = "third"
@@ -18,10 +19,9 @@ func main(){
 		fmt.Println(value)
 	}
 
-	arrTwo := [5]{1,2,3,4,5}
+	arrTwo := [5]int{1,2,3,4,5}
 
 	for _, value := range arrTwo{
 		fmt.Println(value)
 	}
 }
-
