@@ -13,6 +13,7 @@
         android:id="@+id/amount"
         android:gravity="center"
         android:hint="@string/amount"
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -27,14 +28,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/withdraw_button"
-            android:id="@+id/withdraw"
+            android:id="@+id/withdraw_button"
             android:layout_weight="50" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/deposit_button"
-            android:id="@+id/deposit"
+            android:id="@+id/deposit_button"
             android:layout_weight="50" />
     </LinearLayout>
 
