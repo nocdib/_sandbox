@@ -38,7 +38,8 @@ public class MainActivity extends Activity {
         withdrawButton = (Button) findViewById(R.id.withdraw_button);
         depositButton = (Button) findViewById(R.id.deposit_button);
         accountBalance = (TextView) findViewById(R.id.balance);
-        bankAccount = new BankAccount();
+
+        bankAccount = new CheckingAccount(0);
 
         Log.d("Account Balance is:", FMT.format(bankAccount.getBalance()));
 
