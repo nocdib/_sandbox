@@ -1,16 +1,48 @@
 package com.nocdib.signupform;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends AppCompatActivity {
+
+    Button mSubmitButton;
+    EditText mUsername;
+    EditText mPassword;
+    EditText mConfirmPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        mSubmitButton = (Button)findViewById(R.id.submit_button);
+        mUsername = (EditText)findViewById(R.id.username);
+        mPassword = (EditText)findViewById(R.id.password);
+        mConfirmPassword = (EditText)findViewById(R.id.confirm_password);
+
+        mSubmitButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                String username = mUsername.getText().toString();
+                String password = mPassword.getText().toString();
+                String confirmPassword = mConfirmPassword.getText().toString();
+
+                if(password.equals(confirmPassword) && username.length()>4){
+                    User newUser = new User(username,password);
+                }
+
+                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override

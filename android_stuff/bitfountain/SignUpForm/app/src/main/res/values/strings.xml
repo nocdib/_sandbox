@@ -8,4 +8,8 @@
     <string name="confirm_password_heading">Confirm Password: </string>
     <string name="confirm_password_hint">Please confirm your password</string>
     <string name="submit_button">Submit</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
