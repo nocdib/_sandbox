@@ -12,4 +12,5 @@
     <string name="title_activity_home">HomeActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="welcome_format">Welcome %s</string>
 </resources>

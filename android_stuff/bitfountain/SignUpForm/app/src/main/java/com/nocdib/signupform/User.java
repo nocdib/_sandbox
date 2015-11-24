@@ -2,10 +2,12 @@ package com.nocdib.signupform;
 
 import android.util.Log;
 
+import java.io.Serializable;
+
 /**
  * Created by nocdib on 10/25/15.
  */
-public class User {
+public class User implements Serializable{
 
     public static String TAG = "USER";
     private String mUsername;
@@ -15,6 +17,14 @@ public class User {
         mUsername = username;
         mPassword = password;
         Log.d(TAG, "Created " + mUsername + ":" + mPassword);
+    }
+
+    public String getUsername(){
+        return mUsername;
+    }
+
+    public void setPassword(String newPassword){
+        mPassword = newPassword;
     }
 
 }
