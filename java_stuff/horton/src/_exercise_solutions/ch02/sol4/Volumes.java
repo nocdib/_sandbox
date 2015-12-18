@@ -1,3 +1,5 @@
+package _exercise_solutions.ch02.sol4;
+
 //Chapter 2, Exercise 4
 /*
  The diameter of the sun is approximately 865,000 miles.
