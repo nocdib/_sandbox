@@ -35,12 +35,14 @@ public class LoginActivity extends AppCompatActivity {
                 String password = mPassword.getText().toString();
                 String confirmPassword = mConfirmPassword.getText().toString();
 
-                if(password.equals(confirmPassword) && username.length()>4){
-                    User newUser = new User(username,password);
+                if(password.equals(confirmPassword) && username.length()>4){ //if the passwords match
+                    User newUser = new User(username,password); //create a new User object
+                    Intent i = new Intent(LoginActivity.this, HomeActivity.class); //move to the next screen
+                    i.putExtra(HomeActivity.userObjectKey, newUser);
+                    startActivity(i);
                 }
 
-                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
-                startActivity(i);
+
             }
         });
     }
