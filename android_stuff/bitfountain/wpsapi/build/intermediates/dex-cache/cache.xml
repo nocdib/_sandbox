@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/nocdib/_sandbox/android_stuff/bitfountain/wpsapi/app/libs/wpsapi.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="257e553ae5f4d6ab265b00f574f21b8a0f43eab1">
+        <dex dex="/Users/nocdib/_sandbox/android_stuff/bitfountain/wpsapi/app/build/intermediates/pre-dexed/debug/wpsapi_16e97189e32e0cec707d27574811d24e3c26b9e4.jar" />
+    </item>
+
+</items>
