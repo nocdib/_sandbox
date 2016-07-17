@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name" translatable="false">JustJava</string>
+
+    <!-- Edit Text Notes -->
+    <string name="edit_text_name_note">Name</string>
+    <string name="edit_text_email_note">Email</string>
+
+    <!-- Headers -->
+    <string name="label_toppings">Toppings</string>
+    <string name="label_quantity">Quantity</string>
+    <string name="label_order_summary">Order Summary</string>
+
+    <!-- Topping Options -->
+    <string name="checkbox_whipped_cream">Whipped Cream</string>
+    <string name="checkbox_chocolate">Chocolate</string>
+    <string name="checkbox_strawberries">Strawberries</string>
+    <string name="checkbox_sprinkles">Sprinkles</string>
+
+    <!-- Button Text -->
+    <string name="button_text_order">Order</string>
+    <string name="button_text_email">Email</string>
+    <string name="button_text_increase">+</string>
+    <string name="button_text_decrease">-</string>
+
+    <!-- Order Summary Values -->
+    <string name="order_summary_text"></string>
+    <string name="order_summary_name">NAME</string>
+    <string name="order_summary_toppings">TOPPINGS</string>
+    <string name="order_summary_quantity">QUANTITY</string>
+    <string name="order_summary_total">TOTAL</string>
+
+
+</resources>
