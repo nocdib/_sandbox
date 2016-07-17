@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">MarchingAnts</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="song">The ants go marching %1$s by %1$s. Hoorah! Hoorah!</string>
-</resources>
