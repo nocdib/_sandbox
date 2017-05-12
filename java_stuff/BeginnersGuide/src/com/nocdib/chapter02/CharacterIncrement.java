@@ -1,8 +1,8 @@
 package com.nocdib.chapter02;
 
-public class CharacterIncrement {
+class CharacterIncrement {
 
-    public static void main(String[] args) {
+    static void example() {
     for(char x = 'A'; x < '夸'; x++){
 	        System.out.printf("%d) %c\n", (int)x , x);
         }
