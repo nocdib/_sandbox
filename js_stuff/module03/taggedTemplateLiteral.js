@@ -1,8 +1,6 @@
 const manipulator = function(string, ...values){
 	retval = '';
 	return values;
-
-
 };
 
 let name = 'Greg';
