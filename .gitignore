@@ -1,0 +1,3 @@
+*.class
+*/node_module/
+.idea/
