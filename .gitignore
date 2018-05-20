@@ -1,3 +1,5 @@
 *.class
 */node_module/
+*/node_modules/
 .idea/
+.env
