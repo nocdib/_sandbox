@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mandala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-mQ-j7o">
+                                <rect key="frame" x="37" y="179" width="300" height="329"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caB-DC-4FO">
+                                <rect key="frame" x="37" y="179" width="150" height="329"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HfC-i9-d0X">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="329"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eEl-mQ-j7o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="5OU-aS-NwO"/>
+                            <constraint firstItem="caB-DC-4FO" firstAttribute="bottom" secondItem="eEl-mQ-j7o" secondAttribute="bottom" id="5rc-79-V1O"/>
+                            <constraint firstItem="eEl-mQ-j7o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="7Em-dX-Vmu"/>
+                            <constraint firstItem="caB-DC-4FO" firstAttribute="leading" secondItem="eEl-mQ-j7o" secondAttribute="leading" id="M4x-Vb-BQf"/>
+                            <constraint firstItem="eEl-mQ-j7o" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WjY-4t-Tfh"/>
+                            <constraint firstItem="caB-DC-4FO" firstAttribute="top" secondItem="eEl-mQ-j7o" secondAttribute="top" id="cuJ-Yk-679"/>
+                            <constraint firstItem="eEl-mQ-j7o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w8s-Vg-9j4"/>
+                            <constraint firstItem="caB-DC-4FO" firstAttribute="width" secondItem="eEl-mQ-j7o" secondAttribute="width" multiplier="0.5" id="yxx-BB-N9L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="eEl-mQ-j7o" id="U3n-WS-gpY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+</document>

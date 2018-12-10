@@ -7,114 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7281CDA2121F9A9004CB420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7281CD92121F9A9004CB420 /* AppDelegate.swift */; };
-		A7281CDF2121F9A9004CB420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7281CDD2121F9A9004CB420 /* Main.storyboard */; };
-		A7281CE12121F9AA004CB420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7281CE02121F9AA004CB420 /* Assets.xcassets */; };
-		A7281CE42121F9AA004CB420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7281CE22121F9AA004CB420 /* LaunchScreen.storyboard */; };
-		A7281CEC212224D7004CB420 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7281CEB212224D7004CB420 /* ConversionViewController.swift */; };
-		A7281CEF21230CCD004CB420 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7281CEE21230CCC004CB420 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		A7281CF121231D11004CB420 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7281CF021231D11004CB420 /* MapViewController.swift */; };
+		A7281D2B2125D1EF004CB420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7281D2A2125D1EF004CB420 /* AppDelegate.swift */; };
+		A7281D2D2125D1EF004CB420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7281D2C2125D1EF004CB420 /* ViewController.swift */; };
+		A7281D302125D1EF004CB420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7281D2E2125D1EF004CB420 /* Main.storyboard */; };
+		A7281D322125D1F0004CB420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7281D312125D1F0004CB420 /* Assets.xcassets */; };
+		A7281D352125D1F0004CB420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7281D332125D1F0004CB420 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A7281CD62121F9A8004CB420 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7281CD92121F9A9004CB420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7281CDE2121F9A9004CB420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A7281CE02121F9AA004CB420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7281CE32121F9AA004CB420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A7281CE52121F9AA004CB420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7281CEB212224D7004CB420 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
-		A7281CEE21230CCC004CB420 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		A7281CF021231D11004CB420 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A7281D272125D1EF004CB420 /* Mandala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7281D2A2125D1EF004CB420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7281D2C2125D1EF004CB420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7281D2F2125D1EF004CB420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7281D312125D1F0004CB420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7281D342125D1F0004CB420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7281D362125D1F0004CB420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7281CD32121F9A8004CB420 /* Frameworks */ = {
+		A7281D242125D1EF004CB420 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7281CEF21230CCD004CB420 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7281CCD2121F9A8004CB420 = {
+		A7281D1E2125D1EF004CB420 = {
 			isa = PBXGroup;
 			children = (
-				A7281CD82121F9A8004CB420 /* WorldTrotter */,
-				A7281CD72121F9A8004CB420 /* Products */,
-				A7281CED21230CCC004CB420 /* Frameworks */,
+				A7281D292125D1EF004CB420 /* Mandala */,
+				A7281D282125D1EF004CB420 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A7281CD72121F9A8004CB420 /* Products */ = {
+		A7281D282125D1EF004CB420 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7281CD62121F9A8004CB420 /* WorldTrotter.app */,
+				A7281D272125D1EF004CB420 /* Mandala.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7281CD82121F9A8004CB420 /* WorldTrotter */ = {
+		A7281D292125D1EF004CB420 /* Mandala */ = {
 			isa = PBXGroup;
 			children = (
-				A7281CD92121F9A9004CB420 /* AppDelegate.swift */,
-				A7281CEB212224D7004CB420 /* ConversionViewController.swift */,
-				A7281CF021231D11004CB420 /* MapViewController.swift */,
-				A7281CDD2121F9A9004CB420 /* Main.storyboard */,
-				A7281CE02121F9AA004CB420 /* Assets.xcassets */,
-				A7281CE22121F9AA004CB420 /* LaunchScreen.storyboard */,
-				A7281CE52121F9AA004CB420 /* Info.plist */,
+				A7281D2A2125D1EF004CB420 /* AppDelegate.swift */,
+				A7281D2C2125D1EF004CB420 /* ViewController.swift */,
+				A7281D2E2125D1EF004CB420 /* Main.storyboard */,
+				A7281D312125D1F0004CB420 /* Assets.xcassets */,
+				A7281D332125D1F0004CB420 /* LaunchScreen.storyboard */,
+				A7281D362125D1F0004CB420 /* Info.plist */,
 			);
-			path = WorldTrotter;
-			sourceTree = "<group>";
-		};
-		A7281CED21230CCC004CB420 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A7281CEE21230CCC004CB420 /* MapKit.framework */,
-			);
-			name = Frameworks;
+			path = Mandala;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7281CD52121F9A8004CB420 /* WorldTrotter */ = {
+		A7281D262125D1EF004CB420 /* Mandala */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7281CE82121F9AA004CB420 /* Build configuration list for PBXNativeTarget "WorldTrotter" */;
+			buildConfigurationList = A7281D392125D1F0004CB420 /* Build configuration list for PBXNativeTarget "Mandala" */;
 			buildPhases = (
-				A7281CD22121F9A8004CB420 /* Sources */,
-				A7281CD32121F9A8004CB420 /* Frameworks */,
-				A7281CD42121F9A8004CB420 /* Resources */,
+				A7281D232125D1EF004CB420 /* Sources */,
+				A7281D242125D1EF004CB420 /* Frameworks */,
+				A7281D252125D1EF004CB420 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WorldTrotter;
-			productName = WorldTrotter;
-			productReference = A7281CD62121F9A8004CB420 /* WorldTrotter.app */;
+			name = Mandala;
+			productName = Mandala;
+			productReference = A7281D272125D1EF004CB420 /* Mandala.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A7281CCE2121F9A8004CB420 /* Project object */ = {
+		A7281D1F2125D1EF004CB420 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "NOCDIB, Inc.";
 				TargetAttributes = {
-					A7281CD52121F9A8004CB420 = {
+					A7281D262125D1EF004CB420 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = A7281CD12121F9A8004CB420 /* Build configuration list for PBXProject "WorldTrotter" */;
+			buildConfigurationList = A7281D222125D1EF004CB420 /* Build configuration list for PBXProject "Mandala" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,55 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = A7281CCD2121F9A8004CB420;
-			productRefGroup = A7281CD72121F9A8004CB420 /* Products */;
+			mainGroup = A7281D1E2125D1EF004CB420;
+			productRefGroup = A7281D282125D1EF004CB420 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7281CD52121F9A8004CB420 /* WorldTrotter */,
+				A7281D262125D1EF004CB420 /* Mandala */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A7281CD42121F9A8004CB420 /* Resources */ = {
+		A7281D252125D1EF004CB420 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7281CE42121F9AA004CB420 /* LaunchScreen.storyboard in Resources */,
-				A7281CE12121F9AA004CB420 /* Assets.xcassets in Resources */,
-				A7281CDF2121F9A9004CB420 /* Main.storyboard in Resources */,
+				A7281D352125D1F0004CB420 /* LaunchScreen.storyboard in Resources */,
+				A7281D322125D1F0004CB420 /* Assets.xcassets in Resources */,
+				A7281D302125D1EF004CB420 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7281CD22121F9A8004CB420 /* Sources */ = {
+		A7281D232125D1EF004CB420 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7281CEC212224D7004CB420 /* ConversionViewController.swift in Sources */,
-				A7281CF121231D11004CB420 /* MapViewController.swift in Sources */,
-				A7281CDA2121F9A9004CB420 /* AppDelegate.swift in Sources */,
+				A7281D2D2125D1EF004CB420 /* ViewController.swift in Sources */,
+				A7281D2B2125D1EF004CB420 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A7281CDD2121F9A9004CB420 /* Main.storyboard */ = {
+		A7281D2E2125D1EF004CB420 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7281CDE2121F9A9004CB420 /* Base */,
+				A7281D2F2125D1EF004CB420 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A7281CE22121F9AA004CB420 /* LaunchScreen.storyboard */ = {
+		A7281D332125D1F0004CB420 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7281CE32121F9AA004CB420 /* Base */,
+				A7281D342125D1F0004CB420 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A7281CE62121F9AA004CB420 /* Debug */ = {
+		A7281D372125D1F0004CB420 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		A7281CE72121F9AA004CB420 /* Release */ = {
+		A7281D382125D1F0004CB420 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,36 +276,36 @@
 			};
 			name = Release;
 		};
-		A7281CE92121F9AA004CB420 /* Debug */ = {
+		A7281D3A2125D1F0004CB420 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3TPZYMY3Y;
-				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				INFOPLIST_FILE = Mandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nocdib.WorldTrotter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nocdib.Mandala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A7281CEA2121F9AA004CB420 /* Release */ = {
+		A7281D3B2125D1F0004CB420 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3TPZYMY3Y;
-				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				INFOPLIST_FILE = Mandala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nocdib.WorldTrotter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nocdib.Mandala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7281CD12121F9A8004CB420 /* Build configuration list for PBXProject "WorldTrotter" */ = {
+		A7281D222125D1EF004CB420 /* Build configuration list for PBXProject "Mandala" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7281CE62121F9AA004CB420 /* Debug */,
-				A7281CE72121F9AA004CB420 /* Release */,
+				A7281D372125D1F0004CB420 /* Debug */,
+				A7281D382125D1F0004CB420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7281CE82121F9AA004CB420 /* Build configuration list for PBXNativeTarget "WorldTrotter" */ = {
+		A7281D392125D1F0004CB420 /* Build configuration list for PBXNativeTarget "Mandala" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7281CE92121F9AA004CB420 /* Debug */,
-				A7281CEA2121F9AA004CB420 /* Release */,
+				A7281D3A2125D1F0004CB420 /* Debug */,
+				A7281D3B2125D1F0004CB420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A7281CCE2121F9A8004CB420 /* Project object */;
+	rootObject = A7281D1F2125D1EF004CB420 /* Project object */;
 }
