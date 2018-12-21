@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Music Player Example</string>
-    <string name="play">PLAY</string>
-    <string name="pause">PAUSE</string>
-    <string name="stop">STOP</string>
-</resources>

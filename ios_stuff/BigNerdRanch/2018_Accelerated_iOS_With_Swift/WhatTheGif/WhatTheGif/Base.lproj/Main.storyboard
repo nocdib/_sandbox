@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,74 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatTheGif" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbL-tv-tMT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzm-MD-UHv">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="t8e-VW-bmL"/>
+                                        </constraints>
+                                        <items>
+                                            <navigationItem title="What The GIF?!" largeTitleDisplayMode="always" id="ZoW-fR-laE"/>
+                                        </items>
+                                    </navigationBar>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H3D-E1-C9Q">
+                                        <rect key="frame" x="8" y="80" width="359" height="30"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNi-RG-7Tg">
+                                        <rect key="frame" x="319" y="80" width="48" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-j4-hbX">
+                                        <rect key="frame" x="4" y="182" width="367" height="303"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JNi-RG-7Tg" firstAttribute="top" secondItem="H3D-E1-C9Q" secondAttribute="top" id="3dF-tl-7eJ"/>
+                                    <constraint firstItem="nzm-MD-UHv" firstAttribute="top" secondItem="DbL-tv-tMT" secondAttribute="topMargin" id="Cdv-fe-LB3"/>
+                                    <constraint firstAttribute="trailing" secondItem="nzm-MD-UHv" secondAttribute="trailing" id="DFI-fy-ScD"/>
+                                    <constraint firstItem="JNi-RG-7Tg" firstAttribute="bottom" secondItem="H3D-E1-C9Q" secondAttribute="bottom" id="Q1K-d8-Dhe"/>
+                                    <constraint firstItem="H3D-E1-C9Q" firstAttribute="leading" secondItem="DbL-tv-tMT" secondAttribute="leading" constant="8" id="ZAZ-6D-SEX"/>
+                                    <constraint firstAttribute="trailing" secondItem="JNi-RG-7Tg" secondAttribute="trailing" constant="8" id="aUe-PN-tdq" userLabel="trailing = Search.leading"/>
+                                    <constraint firstItem="H3D-E1-C9Q" firstAttribute="top" secondItem="nzm-MD-UHv" secondAttribute="bottom" constant="8" id="mmy-9w-V4a"/>
+                                    <constraint firstItem="nzm-MD-UHv" firstAttribute="leading" secondItem="DbL-tv-tMT" secondAttribute="leading" id="r6A-l9-kEg"/>
+                                    <constraint firstItem="H3D-E1-C9Q" firstAttribute="trailing" secondItem="JNi-RG-7Tg" secondAttribute="trailing" id="wVr-Gc-1So"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DbL-tv-tMT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lel-jS-mbf"/>
+                            <constraint firstItem="DbL-tv-tMT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WkR-it-TXh"/>
+                            <constraint firstItem="DbL-tv-tMT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="csN-pn-ErP"/>
+                            <constraint firstItem="DbL-tv-tMT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gxj-C4-bQi"/>
+                            <constraint firstItem="DbL-tv-tMT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="t8x-rQ-ElV"/>
+                            <constraint firstItem="DbL-tv-tMT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yYw-Se-GrV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gradientBackground" destination="DbL-tv-tMT" id="yHG-22-Vdz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
         </scene>
     </scenes>
 </document>
