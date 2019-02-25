@@ -1,28 +1,27 @@
 const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+
 const app = express();
 
-// First argument is the route, second is the callback
-app.get('/hello/:name', (req,res)=>{
-	res.send(`Well, hello ${req.params.name}`);
+// Middleware to map the actual static/ to the symbolic public/
+app.use('/public', express.static(path.join(__dirname, 'static')));
+
+// Parse url-encoded form
+app.use(bodyParser.urlencoded({extended: false}));
+
+// Serve the index page when the user goes to http://localhost:3000/
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-/* http://localhost:3000/example/greg?name=joshua
-		"name: greg" will appear in req.params
-		"name: joshua" will appear in req.query
-*/
-app.get('/example/:name', (req, res) => {
-	console.log(req.params);
-	console.log(req.query);
-	res.send(`Reached the example route: ${req.params.name}, ${req.query.name}`);
-});
-
-
-/* http://localhost:3000/serveImage
-	Serves the static image in the current directory
-*/
-app.get('/serveImage', (req, res) => {
-	const filename = 'fodacy.jpg';
-	res.sendFile(`${__dirname}/${filename}`);
+/* When the user clicks the form's Submit button print the body of the request
+	to the console then tell the user that the data was sent.
+ */
+app.post('/', (req, res) => {
+	console.log(req);
+	// Do whatever backend work here
+	res.send('Successfully posted data');
 });
 
 app.listen(3000);
