@@ -9,6 +9,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RestController // HTTP requests are handled by a controller
 public class GreetingController {
 
+
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
