@@ -23,6 +23,7 @@ public class Main {
 
         Playlist hiphopPlaylist = new Playlist();
 
+
         Album readyToDie = new Album("Notorious B.I.G", "Ready To Die");
         Song warning = new Song("Warning", 300);
         Song juicy = new Song("Juicy", 300);
@@ -45,6 +46,7 @@ public class Main {
         hiphopPlaylist.addTrack(readyToDie, juicy);
 
         hiphopPlaylist.showMenu();
+
     }
 }
 
