@@ -11,12 +11,12 @@ fun main() {
     println("--------------------------")
     println(longestPalindrome("Gregory"))
     println("--------------------------")
-    println(longestPalindrome("racecared"))
+    println(longestPalindrome("racecarizard"))
 }
 
 /* Return the longest palindrome in a string, excluding single-characters */
 fun longestPalindrome(str: String = ""): String {
-    // Remove all alphanumeric characters from the string
+    // Remove all non-alphanumeric characters from the string
     var alphanumericString = str.replace(("[^A-Za-z0-9]").toRegex(), "")
     println(alphanumericString)
     var longestPalindrome: String = ""
@@ -44,6 +44,6 @@ fun longestPalindrome(str: String = ""): String {
 /* Return true if a string reads the same forwards and backwards */
 fun isPalindrome(str: String) : Boolean {
     comparisons++
-    println("isPalindrome: ${str}")
+    //println("isPalindrome: ${str}")
     return str.toLowerCase().equals(str.toLowerCase().reversed()) && str.length > 1
 }
